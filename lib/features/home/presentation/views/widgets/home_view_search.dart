@@ -61,7 +61,7 @@ class HomeViewSearch extends StatelessWidget {
               ),
             ),
           ),
-          FilterIcon()
+          const FilterIcon()
         ],
       ),
     );
