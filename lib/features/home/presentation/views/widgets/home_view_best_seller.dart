@@ -10,7 +10,7 @@ class HomeViewBestSeller extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 600.h,
+      height: 500.h,
       child: Column(
         children: [
           Padding(

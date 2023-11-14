@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:selaty/features/home/presentation/views/widgets/home_view_ad.dart';
 import 'package:selaty/features/home/presentation/views/widgets/home_view_best_seller.dart';
 import 'package:selaty/features/home/presentation/views/widgets/home_view_best_value.dart';
 import 'package:selaty/features/home/presentation/views/widgets/home_view_categories.dart';
@@ -25,7 +26,8 @@ class HomeViewBody extends StatelessWidget {
         SizedBox(
           height: 15.h,
         ),
-        const HomeViewBestSeller()
+        const HomeViewBestSeller(),
+        HomeViewAd()
       ]),
     );
   }
