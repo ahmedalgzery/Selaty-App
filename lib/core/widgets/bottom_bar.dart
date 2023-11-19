@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:selaty/constant.dart';
 import 'package:selaty/core/utils/assets.dart';
+import 'package:selaty/features/cart/presentation/views/cart_view.dart';
 import 'package:selaty/features/category/presentation/views/category_view.dart';
 import 'package:selaty/features/home/presentation/views/home_view.dart';
 import 'package:selaty/features/profile/presentation/views/profile_view.dart';
@@ -23,7 +24,7 @@ class _BottomBarState extends State<BottomBar> {
     const Text('sdf'),
     const CategoryView(),
     const HomeView(),
-    const Text('sdf'),
+    const CartView(),
     const ProfileView(),
   ];
 
