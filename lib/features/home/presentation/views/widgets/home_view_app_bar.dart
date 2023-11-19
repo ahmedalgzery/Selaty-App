@@ -55,7 +55,7 @@ class HomeViewAppBar extends StatelessWidget {
             backgroundColor: Colors.white,
             child: CircleAvatar(
               radius: 18.r,
-              backgroundImage: const AssetImage(AssetesData.mango),
+              backgroundImage: const AssetImage(AssetesData.ahmed),
             ),
           )
         ],

@@ -20,7 +20,7 @@ class ProfileViewImage extends StatelessWidget {
             child: CircleAvatar(
               radius: 70.r,
               backgroundImage: const AssetImage(
-                AssetesData.mango,
+                AssetesData.ahmed,
               ),
             ),
           ),
