@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:selaty/core/widgets/bottom_bar.dart';
+import 'package:selaty/features/address/presentation/views/address_view.dart';
 import 'package:selaty/features/auth/presentation/views/auth_view.dart';
 import 'package:selaty/features/cart/presentation/views/cart_view.dart';
 import 'package:selaty/features/category/presentation/views/category_view.dart';
@@ -58,25 +59,29 @@ abstract class AppRouter {
         path: CategoryView.kCategoryView,
         builder: (context, state) => const CategoryView(),
       ),
-       GoRoute(
-        path:BottomBar.kBottomBar,
+      GoRoute(
+        path: BottomBar.kBottomBar,
         builder: (context, state) => const BottomBar(),
       ),
-       GoRoute(
-        path:ProductView.kProductView,
+      GoRoute(
+        path: ProductView.kProductView,
         builder: (context, state) => const ProductView(),
       ),
-        GoRoute(
-        path:ProfileView.kProfileView,
+      GoRoute(
+        path: ProfileView.kProfileView,
         builder: (context, state) => const ProfileView(),
       ),
-        GoRoute(
-        path:HomeView.kHomeView,
+      GoRoute(
+        path: HomeView.kHomeView,
         builder: (context, state) => const HomeView(),
       ),
-        GoRoute(
-        path:CartView.kCartView,
+      GoRoute(
+        path: CartView.kCartView,
         builder: (context, state) => const CartView(),
+      ),
+      GoRoute(
+        path: AddressView.kAddressView,
+        builder: (context, state) => const AddressView(),
       ),
     ],
   );

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:selaty/core/utils/styles.dart';
 import 'package:selaty/core/widgets/custom_button.dart';
+import 'package:selaty/features/address/presentation/views/address_view.dart';
 
 class EmptyCartView extends StatelessWidget {
   const EmptyCartView({super.key});
@@ -36,7 +38,11 @@ class EmptyCartView extends StatelessWidget {
           const Spacer(),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 15.h),
-            child: CustomButton(text: 'ابدأ التسوق', onPressed: () {}),
+            child: CustomButton(
+                text: 'ابدأ التسوق',
+                onPressed: () {
+                  GoRouter.of(context).push(AddressView.kAddressView);
+                }),
           ),
         ],
       ),
