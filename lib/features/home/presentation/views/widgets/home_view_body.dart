@@ -6,6 +6,7 @@ import 'package:selaty/features/home/presentation/views/widgets/home_view_best_v
 import 'package:selaty/features/home/presentation/views/widgets/home_view_categories.dart';
 import 'package:selaty/features/home/presentation/views/widgets/home_view_fresh.dart';
 import 'package:selaty/features/home/presentation/views/widgets/home_view_offers.dart';
+import 'package:selaty/features/home/presentation/views/widgets/home_view_opportunity.dart';
 import 'package:selaty/features/home/presentation/views/widgets/home_view_search.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -31,7 +32,8 @@ class HomeViewBody extends StatelessWidget {
         const HomeViewBestSeller(),
         const HomeViewAd(),
         const HomeViewOffers(),
-        const HomeViewFresh()
+        const HomeViewFresh(),
+        const HomeViewOpportunity()
       ]),
     );
   }

@@ -40,7 +40,7 @@ class HomeViewOffers extends StatelessWidget {
           Row(
             children: [
               OffersButton(
-                color: Colors.red,
+                color: const Color(0xFFFF5556),
                 child: Column(
                   children: [
                     Text(
@@ -59,7 +59,7 @@ class HomeViewOffers extends StatelessWidget {
                 ),
               ),
               OffersButton(
-                color: Colors.red,
+                color: const Color(0xFF34A1FE),
                 child: Column(
                   children: [
                     Text(
@@ -78,7 +78,7 @@ class HomeViewOffers extends StatelessWidget {
                 ),
               ),
               OffersButton(
-                color: Colors.red,
+                color: const Color(0xFFC35DD7),
                 child: Column(
                   children: [
                     Text(
@@ -101,7 +101,7 @@ class HomeViewOffers extends StatelessWidget {
           Row(
             children: [
               OffersButton(
-                color: Colors.red,
+                color: const Color(0xFF26B3AE),
                 child: Text(
                   'اخيارات\nالشهر',
                   style: Styles.textStyle24.copyWith(color: Colors.white),
@@ -109,7 +109,7 @@ class HomeViewOffers extends StatelessWidget {
                 ),
               ),
               OffersButton(
-                color: Colors.red,
+                color: const Color(0xFF849C3D),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -125,7 +125,7 @@ class HomeViewOffers extends StatelessWidget {
                 ),
               ),
               OffersButton(
-                color: Colors.red,
+                color: const Color(0xFFE69B21),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
