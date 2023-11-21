@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:selaty/core/utils/styles.dart';
 import 'package:selaty/core/widgets/custom_button.dart';
 import 'package:selaty/features/address/presentation/views/widgets/address_item.dart';
-import 'package:selaty/features/oreder/presentation/views/order_view.dart';
+import 'package:selaty/features/success_order/presentation/views/success_order_view.dart';
 
 class AddressViewBody extends StatelessWidget {
   const AddressViewBody({super.key});
@@ -42,7 +42,7 @@ class AddressViewBody extends StatelessWidget {
             child: CustomButton(
                 text: 'التسليم لهذا العنوان',
                 onPressed: () {
-                  GoRouter.of(context).push(OrderView.kOrderView);
+                  GoRouter.of(context).push(SuccessOrderView.kSuccessOrderView);
                 }),
           ),
         ],

@@ -16,6 +16,7 @@ import 'package:selaty/features/product/presentation/views/product_view.dart';
 import 'package:selaty/features/profile/presentation/views/profile_view.dart';
 import 'package:selaty/features/register/presentation/views/register_view.dart';
 import 'package:selaty/features/splash/presentation/views/splash_view.dart';
+import 'package:selaty/features/success_order/presentation/views/success_order_view.dart';
 import 'package:selaty/features/verify_code/presentation/view/verify_code_view.dart';
 
 abstract class AppRouter {
@@ -92,6 +93,10 @@ abstract class AppRouter {
       GoRoute(
         path: OrderView.kOrderView,
         builder: (context, state) => const OrderView(),
+      ),
+      GoRoute(
+        path: SuccessOrderView.kSuccessOrderView,
+        builder: (context, state) => const SuccessOrderView(),
       ),
     ],
   );

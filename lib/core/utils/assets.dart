@@ -3,4 +3,5 @@ class AssetesData {
   static const fruit = 'assets/images/fruit.jpeg';
   static const mango = 'assets/images/mango.jpg';
   static const ahmed = 'assets/images/ahmed.jpeg';
+  static const accept = 'assets/images/accept.png';
 }
