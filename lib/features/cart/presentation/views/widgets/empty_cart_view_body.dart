@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:selaty/core/utils/styles.dart';
 import 'package:selaty/core/widgets/custom_button.dart';
-import 'package:selaty/features/address/presentation/views/address_view.dart';
+import 'package:selaty/features/cart/presentation/views/full_cart_view.dart';
 
-class EmptyCartView extends StatelessWidget {
-  const EmptyCartView({super.key});
+class EmptyCartViewBody extends StatelessWidget {
+  const EmptyCartViewBody({super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -41,7 +41,7 @@ class EmptyCartView extends StatelessWidget {
             child: CustomButton(
                 text: 'ابدأ التسوق',
                 onPressed: () {
-                  GoRouter.of(context).push(AddressView.kAddressView);
+                  GoRouter.of(context).push(FullCartView.kFullCartView);
                 }),
           ),
         ],

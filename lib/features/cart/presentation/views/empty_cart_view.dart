@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:selaty/constant.dart';
 import 'package:selaty/core/widgets/custom_app_bar.dart';
-import 'package:selaty/features/address/presentation/views/widgets/address_view_body.dart';
+import 'package:selaty/features/cart/presentation/views/widgets/empty_cart_view_body.dart';
 
-class AddressView extends StatelessWidget {
-  const AddressView({super.key});
-  static const String kAddressView = '/addressview';
+class EmptyCartView extends StatelessWidget {
+  const EmptyCartView({super.key});
+  static const String kEmptyCartView = '/emptyCartView';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kSecondColor,
       appBar: PreferredSize(
         preferredSize: Size(double.infinity, 50.h),
-        child: const CustomAppBar(title: 'عنوان التسليم'),
+        child: const CustomAppBar(title: 'عربة التسوق'),
       ),
-      body: const AddressViewBody(),
+      body: const EmptyCartViewBody(),
     );
   }
 }

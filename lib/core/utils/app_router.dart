@@ -2,7 +2,8 @@ import 'package:go_router/go_router.dart';
 import 'package:selaty/core/widgets/bottom_bar.dart';
 import 'package:selaty/features/address/presentation/views/address_view.dart';
 import 'package:selaty/features/auth/presentation/views/auth_view.dart';
-import 'package:selaty/features/cart/presentation/views/cart_view.dart';
+import 'package:selaty/features/cart/presentation/views/empty_cart_view.dart';
+import 'package:selaty/features/cart/presentation/views/full_cart_view.dart';
 import 'package:selaty/features/category/presentation/views/category_view.dart';
 import 'package:selaty/features/home/presentation/views/home_view.dart';
 import 'package:selaty/features/login/presentation/views/login_view.dart';
@@ -76,8 +77,12 @@ abstract class AppRouter {
         builder: (context, state) => const HomeView(),
       ),
       GoRoute(
-        path: CartView.kCartView,
-        builder: (context, state) => const CartView(),
+        path: EmptyCartView.kEmptyCartView,
+        builder: (context, state) => const EmptyCartView(),
+      ),
+       GoRoute(
+        path: FullCartView.kFullCartView,
+        builder: (context, state) => const FullCartView(),
       ),
       GoRoute(
         path: AddressView.kAddressView,
