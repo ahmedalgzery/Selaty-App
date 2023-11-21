@@ -12,7 +12,7 @@ class OffersButton extends StatelessWidget {
         width: double.infinity,
         margin: EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
         padding: EdgeInsets.symmetric(vertical: 5.h, horizontal: 10.w),
-        height: 100.h,
+        height: 110.h,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16.r), color: color),
         child: child,

@@ -10,7 +10,7 @@ class HomeViewFresh extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 660.h,
+      height: 680.h,
       width: double.infinity,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,

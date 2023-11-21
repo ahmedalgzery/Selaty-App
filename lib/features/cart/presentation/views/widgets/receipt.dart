@@ -11,7 +11,7 @@ class Receipt extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 120.h,
+      height: 130.h,
       margin: EdgeInsets.symmetric(horizontal: 10.w),
       padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
       decoration: BoxDecoration(
