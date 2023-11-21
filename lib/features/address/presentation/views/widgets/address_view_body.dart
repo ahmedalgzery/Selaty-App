@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:selaty/core/utils/styles.dart';
 import 'package:selaty/core/widgets/custom_button.dart';
 import 'package:selaty/features/address/presentation/views/widgets/address_item.dart';
+import 'package:selaty/features/oreder/presentation/views/order_view.dart';
 
 class AddressViewBody extends StatelessWidget {
   const AddressViewBody({super.key});
@@ -37,7 +39,11 @@ class AddressViewBody extends StatelessWidget {
           const Spacer(),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),
-            child: CustomButton(text: 'التسليم لهذا العنوان', onPressed: () {}),
+            child: CustomButton(
+                text: 'التسليم لهذا العنوان',
+                onPressed: () {
+                  GoRouter.of(context).push(OrderView.kOrderView);
+                }),
           ),
         ],
       ),

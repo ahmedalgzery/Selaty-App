@@ -8,6 +8,7 @@ import 'package:selaty/features/category/presentation/views/category_view.dart';
 import 'package:selaty/features/home/presentation/views/home_view.dart';
 import 'package:selaty/features/login/presentation/views/login_view.dart';
 import 'package:selaty/features/onboarding/presentation/views/onbaording_view.dart';
+import 'package:selaty/features/oreder/presentation/views/order_view.dart';
 import 'package:selaty/features/password/presentation/views/password_view.dart';
 import 'package:selaty/features/password_success/presentation/views/password_success_view.dart';
 import 'package:selaty/features/phone/presentation/view/phone_view.dart';
@@ -80,13 +81,17 @@ abstract class AppRouter {
         path: EmptyCartView.kEmptyCartView,
         builder: (context, state) => const EmptyCartView(),
       ),
-       GoRoute(
+      GoRoute(
         path: FullCartView.kFullCartView,
         builder: (context, state) => const FullCartView(),
       ),
       GoRoute(
         path: AddressView.kAddressView,
         builder: (context, state) => const AddressView(),
+      ),
+      GoRoute(
+        path: OrderView.kOrderView,
+        builder: (context, state) => const OrderView(),
       ),
     ],
   );
